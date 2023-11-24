@@ -26,7 +26,7 @@ async def main() -> None:
     dp = Dispatcher()
 
     scheduler = AsyncIOScheduler(timezone="Europe/Moscow")
-    scheduler.add_job(auto_send_msg, trigger='cron', hour=21, minute=45, start_date=datetime.now(), kwargs={'bot': bot})
+    scheduler.add_job(auto_send_msg, trigger='cron', hour=19, minute=55, start_date=datetime.now(), kwargs={'bot': bot})
     scheduler.add_job(auto_send_msg, trigger='cron', hour=1, minute=55, start_date=datetime.now(), kwargs={'bot': bot})
     scheduler.start()
 
