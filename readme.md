@@ -1,17 +1,11 @@
 # Repeat English Words Bot
 
-## To Do List
+## About 
 
-- поиграться с sql алхимией или как-то так
-- 
-- привести в порядок код
-- выложить в гит
-- 
-- выложить на хостинг
-  - проверить как все работает
-- 
-- попробовать докер
-___
-- добавить is_hidden
-- добавить команду all - которая выдает все записи
-- 
+This is telegram bot for repeating english words and expressions
+
+Stack:
+
+1. Python
+2. Aiogram
+3. psycopg2
