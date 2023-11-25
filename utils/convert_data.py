@@ -1,7 +1,12 @@
+import random
+
+
 def convert_data_to_msg(data) -> list:
 
     def get_title():
         return f'Part - {len(msg)+1}\n\n'
+
+    random.shuffle(data)
 
     i = 0
     msg = []
