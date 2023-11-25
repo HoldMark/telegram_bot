@@ -14,7 +14,7 @@ def convert_data_to_msg(data) -> list:
 
         if len(text + one_line) > 4096:
             msg.append(text)
-            text = get_title()
+            text = get_title() + one_line
         else:
             text += one_line
 
