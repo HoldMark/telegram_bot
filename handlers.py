@@ -15,6 +15,12 @@ async def get_all(msg: Message, bot: Bot):
         await bot.send_message(msg.from_user.id, i)
 
 
+@router.message(Command('just_get'))
+async def get(msg: Message, bot: Bot):
+    for i in get_msg():
+        await bot.send_message(msg.from_user.id, i)
+
+
 @router.message(CommandStart())
 async def process_start_command(message: Message):
     await message.answer('Hi')
